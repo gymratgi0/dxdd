@@ -1,0 +1,89 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:dodgerblue;
+    text-align: center;
+
+}
+
+/*sombra*/
+.g{
+   position: fixed;
+   margin-top: 8%;
+}
+
+/*botão*/
+.a{
+   margin-top: 10%;
+   margin-left: 40%;
+}
+
+/*barra*/
+.r{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+   background-color:rgb(27, 93, 159);
+   position: fixed; top: 0; left: 0;
+   width: 100vw;
+   color: aliceblue;
+}
+
+
+
+/*grid das sobras*/
+.angry-grid2 {
+    display: grid; 
+ 
+    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-areas: 
+     'label8 label9';
+    
+     height: 200px;
+     width: 50%;
+     margin-left: 40%;
+ }
+   
+ #item-8 {
+    grid-area: label8;  
+ }
+
+ #item-9 {
+    background-color:rgb(27, 93, 159); 
+    grid-area: label9;
+ }
+
+ /*personagens de baixo*/
+.angry-grid {
+    display: grid; 
+ 
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    grid-template-areas: 
+     'label0 label1 label2 label3 label4 label5 label6 label7';
+    
+    gap: 0px;
+    margin-left: 30%;
+  
+ }
+   
+ #item-0 {grid-area: label0;}
+ #item-1 {grid-area: label1;}
+ #item-2 {grid-area: label2;}
+ #item-3 {grid-area: label3;}
+ #item-4 {grid-area: label4;}
+ #item-5 {grid-area: label5;}
+ #item-6 {grid-area: label6;}
+
+ /*css do botão*/
+ button{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    color:black;
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-size: medium;
+    
+ }
